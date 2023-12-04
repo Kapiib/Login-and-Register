@@ -3,18 +3,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
-    <script src="./Java/script.js"></script>
+    <script src="./js/script.js"></script>
     <title>Document</title>
 </head>
 <body>
     <div class="container">
-        <form id="form" action="/">
+        <form id="form">
             <h1>Registration</h1>
-            <div class="input-control">
-                <label for="username">Username</label>
-                <input id="username" name="username" type="text" required>
-                <div class="error"></div>
-            </div>
             <div class="input-control">
                 <label for="email">Email</label>
                 <input id="email" name="email" type="email">
@@ -26,11 +21,14 @@
                 <div class="error"></div>
             </div>
             <div class="input-control">
-                <label for="password">password again</label>
+                <label for="password">Repeat Password</label>
                 <input id="password2" name="password2" type="password">
                 <div class="error"></div>
             </div>
-            <button type="submit">Sign Up</button>
+            <div>
+                <a href="./Main.html">Logg Inn</a>
+            </div>
+            <button type="button" onclick="register()">Register</button>
         </form>
     </div>
 
